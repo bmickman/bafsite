@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+
+$color1:#24b9ff;
+$color2:#5aff65;
+$color3:#ebff6c;
+
+
+body{
+margin:0;
+font-family: 'open sans';
+font-size:200%;
+
+}
+
+.navbar-default{
+	background-color:#666666;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color:$color2;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	font-weight:bold;
+	color:$color1;
+	background-color:none;
+}
+
+.navbar-default .navbar-nav>li>a:active:hover{
+	font-weight:bold;
+	color:$color3;
+	background-color:none;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+color:$color1;
+font-weight:bold;
+background-color:none;
+}
+
+.navbar-brand>img{
+	padding-top:10%;
+	padding-bottom:10%;
+}

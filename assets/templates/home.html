@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="col-md-6" >
+		<img class="animated fadeIn" src="assets/img/baflogo.png" alt="BAF" style="height:50%; margin-top:25%;margin-left:10%;"></img>
+	</div>
+	<div class="col-md-6" style="height:50%; margin-top:20%;">
+		
+	
+		<div class="panel panel-default" style="padding:5%; text-align:center;">
+			<div class="panel-header panel">
+				The First Annual Bushwick Arts Festival will take place June 3-5, 2016
+			</div>
+		
+			<div class="panel panel-primary" id="newcountdown" style="padding:5%; "></div>
+				<div class="panel">
+					Like us on <a href="https://www.facebook.com/bushwickartsfestival/">Facebook</a> for updates!
+				</div>
+		
+		
+		
+		</div>
+</div>
+
+<script>
+    CountDownTimer('06/03/2016 12:00 PM', 'newcountdown');
+    function CountDownTimer(dt, id)
+    {
+        var end = new Date(dt);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+            document.getElementById(id).innerHTML = days + 'days ';
+            document.getElementById(id).innerHTML += hours + 'hrs ';
+            document.getElementById(id).innerHTML += minutes + 'mins ';
+            document.getElementById(id).innerHTML += seconds + 'secs';
+        }
+        timer = setInterval(showRemaining, 1000);
+    }
+
+</script>
+
