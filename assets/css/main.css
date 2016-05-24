@@ -4,11 +4,61 @@ body {
   font-family: 'open sans';
   font-size: 200%; }
 
+body {
+  background-color: #000; }
+
+.container {
+  background-color: #fff; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #ff0080; }
+
+.navbar-brand {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+.navbar-brand:hover {
+  -webkit-transform: rotate(725deg);
+  border-radius: 5;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out; }
+
+.mylink {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+.mylink:hover {
+  -webkit-transform: rotate(725deg);
+  -webkit-transition: all .9s ease-in-out;
+  -moz-transition: all .9s ease-in-out;
+  -o-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out; }
+
+#map {
+  height: 500px;
+  width: 100%;
+  box-shadow: 8px 8px 30px #24b9ff;
+  margin: 5%; }
+
+#mappanel {
+  margin-top: 200px;
+  z-index: 3;
+  width: 800px;
+  height: 800px; }
+
+#mymap {
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
 .navbar-default {
   background-color: #666666; }
-
-.mylinks {
-  text-align: center; }
 
 .navbar-default .navbar-nav > li > a {
   color: #5aff65; }
