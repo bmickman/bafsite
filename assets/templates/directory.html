@@ -1,23 +1,15 @@
 <div >
-	
 	<div class=container>
-		<input type="text" placeholder="search artists" data-ng-model="artistsearch.Artist" style="margin:15px;"></input>
-		<ul>
-			<li ng-repeat="artist in artists | filter:artistsearch" >
-			<p>{{artist.Artist}} , {{artist.Venue}} ,{{artist.Street}}</p>
+		<input style="width:35%; margin:2%; border-radius:10px;" type="text" placeholder="search artist, venue, or address!" data-ng-model="artistsearch" style="margin:15px;"></input>
+		<ul style="padding:1%; margin-left:10%;">
+			<li ng-repeat="artist in artists | filter:artistsearch | orderBy:'Artist'" >
+			<p><strong>{{artist.Artist}} </strong>, {{artist.Venue}} , {{artist.Street}}</p>
 			<!--<p>{{artist.Medium}}</p>-->
-			<p>{{artist.Friday}}</p>
-			<p>{{artist.Saturday}}</p>
-			<p>{{artist.Sunday}}</p>
-			
-			
-				
+			<p>Friday: {{artist.Friday}}</p>
+			<p>Saturday: {{artist.Saturday}}</p>
+			<p>Sunday: {{artist.Sunday}}</p>
+							
 			</li>
-		</ul>
-	
+		</ul>	
 	</div>
-	
-			
-
-	
 </div>

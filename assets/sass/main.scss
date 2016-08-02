@@ -9,8 +9,12 @@ body{
 margin:0;
 font-family: 'open sans';
 font-size:200%;
-
+height:100vh;
 }
+
+.container{border-radius:30px;}
+
+#good{text-align:center; color:$color4;}
 
 body{
 background-color:#000;
@@ -19,6 +23,7 @@ background-color:#000;
 .navbar-default .navbar-nav > li > a{
 color:$color4;
 }
+
 
 .navbar-brand {
   -webkit-transition: all 0.6s ease-in-out;
@@ -29,7 +34,15 @@ color:$color4;
 
 .navbar-brand:hover {
   -webkit-transform: rotate(725deg);
+  -moz-transform: rotate(725deg);
+  -o-transform: rotate(725deg);
+  transform: rotate(725deg);
+  
+   -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  -o-border-radius: 5;
   border-radius: 5;
+
   
   -webkit-transition: all 1.2s ease-in-out;
     -moz-transition: all 1.2s ease-in-out;
@@ -37,6 +50,7 @@ color:$color4;
     transition: all 1.2s ease-in-out;
 }
 
+@media (min-width: 769px) {
 .mylink {
   -webkit-transition: all 0.6s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
@@ -46,13 +60,15 @@ color:$color4;
 
 .mylink:hover {
   -webkit-transform: rotate(725deg);
+  transform: rotate(725deg);
+  -moz-transform: rotate(725deg);
   
   -webkit-transition: all .9s ease-in-out;
     -moz-transition: all .9s ease-in-out;
     -o-transition: all .9s ease-in-out;
     transition: all .9s ease-in-out;
 }
-
+}
 
 
 #map{
